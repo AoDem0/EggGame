@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7538840021422412841}
   - component: {fileID: 6834195324485932506}
   - component: {fileID: 6029085977496030016}
+  - component: {fileID: 8238362438995548997}
   m_Layer: 0
   m_Name: egg2
   m_TagString: Untagged
@@ -152,3 +153,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8238362438995548997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5334478040325556075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bbb1285655cbbe4bb7efed883703cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: {fileID: 0}
+  eggPoints: 5
+  pos: {fileID: 8842370625286727896}

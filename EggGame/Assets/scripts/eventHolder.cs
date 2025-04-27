@@ -4,7 +4,9 @@ using UnityEngine;
 public class eventHolder : MonoBehaviour
 {
     public static event Action<Vector3> OnSendPosition;
-    public static event Action<string> OnLootPick;
+    public static event Action<int> OnEggPick;
+    public static event Action OnPoopPick;
+
 
     public void SendPosition(Vector3 position)
     {
@@ -13,11 +15,18 @@ public class eventHolder : MonoBehaviour
             OnSendPosition.Invoke(position);
         }
     }
-    public void LootPick(string lootType)
+    public void EggPick(int points)
     {
-        if (OnSendPosition != null)
+        if (OnEggPick != null)
         {
-            OnLootPick.Invoke(lootType);
+            OnEggPick.Invoke(points);
+        }
+    }
+    public void PoopPick()
+    {
+        if (OnPoopPick != null)
+        {
+            OnPoopPick.Invoke();
         }
     }
 }
