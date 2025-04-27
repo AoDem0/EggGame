@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class spawnBird : MonoBehaviour
 {
-    [SerializeField]private Vector3 spawnPosition1;
-    [SerializeField]private Vector3 spawnPosition2;
-    [SerializeField]private GameObject birdPrefab;
+    [SerializeField] private Vector3 spawnPosition1;
+    [SerializeField] private Vector3 spawnPosition2;
+    [SerializeField] private GameObject birdPrefab;
     private float spawnRate = 3;
     private float timer = 0;
 

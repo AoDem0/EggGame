@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class scoreMan : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class scoreMan : MonoBehaviour
             else{
                 pasekSerc[i].enabled = false;
             }
+        }
+        if(playerHp == 0){
+            SceneManager.LoadScene("end");
         }
     }
 

@@ -4,8 +4,8 @@ public class poopScript : MonoBehaviour
 {
     [SerializeField] private eventHolder events;
 
-    [SerializeField]private Transform pos;
-
+    [SerializeField] private Transform pos;
+    [SerializeField] private SpriteRenderer sr;
      void Start()
     {
         events = FindAnyObjectByType<eventHolder>();
@@ -14,12 +14,13 @@ public class poopScript : MonoBehaviour
     {
         if (collision.CompareTag("basket")){
             events.PoopPick();
+            sr.enabled = false;
         }
     }
 
     void Update()
     {
-        if(pos.position.y >= -10){
+        if(pos.position.y <= -10){
             Destroy(gameObject);
         }
     }
